@@ -10,12 +10,12 @@ trigger:
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- task: SonarCloudPrepare@1
-  inputs:
-    SonarCloud: 'sonarcloud'
-    organization: 'gnzamura'
-    scannerMode: 'Other'
+#steps:
+#- task: SonarCloudPrepare@1
+ # inputs:
+ #   SonarCloud: 'sonarcloud'
+ #   organization: 'gnzamura'
+ #   scannerMode: 'Other'
 
 - task: Maven@3
   inputs:
